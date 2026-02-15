@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #1f1f2e, #2b5876);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container, .chat-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-messages {
+    height: 250px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    display: flex;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+}
+
+.chat-input button {
+    padding: 8px;
+}

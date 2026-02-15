@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter username">
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="chat-container hidden">
+    <div class="chat-header">
+        <h3>Secure Chat Room</h3>
+    </div>
+    <div id="messages" class="chat-messages"></div>
+    <div class="chat-input">
+        <input type="text" id="msg" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
